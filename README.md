@@ -49,8 +49,8 @@ The Unity client focuses on handling communication with the server and processin
 
 1.  Run `Server.exe` located in the `Server/bin/Debug` folder to start the game server.
 2.  Open the `Client` folder as a project in Unity Hub.
-3.  Press the **Play** button in the Unity Editor to run the client.
-4.  To test multiple clients, build the project (**File > Build and Run**) and then run multiple instances of the executable.
+3.  Press the **Play** button in the Unity Editor to run the first client.
+4.  To test multiple clients, you can run one client within the Unity Editor and simultaneously launch a built executable of the project (`File > Build and Run`).
 
 ---
 
