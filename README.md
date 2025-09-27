@@ -1,6 +1,6 @@
 # 🎮 C# & Unity MMO Client-Server
 
-This project demonstrates the core process of real-time multiplayer communication by integrating a high-performance MMO game server, built from scratch in C#, with a client created in the Unity engine. It covers the entire process, from the server's foundational architecture to the client's actual movement packet transmission.
+This project demonstrates a high-performance MMO game server, built from scratch in C# and integrated with a Unity client. It is designed to handle **hundreds of concurrent players**, covering the entire process from foundational server architecture to real-time client-side packet transmission.
 
 <br>
 
@@ -9,6 +9,7 @@ This project demonstrates the core process of real-time multiplayer communicatio
 Multiple clients connect to the server, send their position data, and the server broadcasts this information to all other clients to synchronize their positions in real-time.
 
 ![multiple clients moving in a game world](https://github.com/Jeonhyeonmin/Unity-MMO-Client-Server/blob/main/Unity.gif?raw=true)
+> *A demonstration of hundreds of clients simultaneously connected, each moving randomly and sharing their positions in real-time.*
 
 <br>
 
@@ -21,7 +22,7 @@ This server's design is modular, focusing on the key pillars of MMO technology. 
 | Core System          | Key Concepts Implemented                                                                                   | Purpose                                                                                                      |
 | :------------------- | :--------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------- |
 | 🧠 **Multithreading** | `SpinLock`, `ReaderWriterLock`, Custom Thread Management, `MemoryBarrier`, Deadlock Avoidance, `Thread Local Storage (TLS)` | To achieve maximum concurrency and performance on multi-core processors while ensuring data integrity.         |
-| 🌐 **Networking** | Asynchronous `Socket` Programming, Session Management, Custom `Send/Recv` Ring Buffers, TCP `Listener` & `Connector` | To handle thousands of simultaneous client connections with a non-blocking, low-latency I/O model.         |
+| 🌐 **Networking** | Asynchronous `Socket` Programming, Session Management, Custom `Send/Recv` Ring Buffers, TCP `Listener` & `Connector` | To handle **hundreds of simultaneous client connections** with a non-blocking, low-latency I/O model.         |
 | 📦 **Packet Handling** | Custom Binary Serialization, Automated C# Code Generation from XML/JSON Packet Definitions               | To create a highly efficient and error-free data protocol between the client and server.                     |
 | ⚡️ **Concurrency & Jobs** | `Job Queue` System with a dedicated worker thread, Command Pattern, `Job Timer` for delayed execution      | To serialize critical game logic (like world updates) in a single thread, avoiding complex synchronization. |
 
