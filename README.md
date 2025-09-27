@@ -10,8 +10,8 @@ Multiple clients connect to the server, send their position data, and the server
 
 **(It is highly recommended to add a GIF here showing multiple clients moving simultaneously!)**
 
-![multiple clients moving in a game world](https://github.com/user-attachments/assets/b839211c-c76a-466d-8a03-911de034177b)
-
+[![multiple clients moving in a game world]([https://github.com/user-attachments/assets/b839211c-c76a-466d-8a03-911de034177b](https://github.com/Jeonhyeonmin/Unity-MMO-Client-Server/blob/main/Unity.gif?raw=true))
+](https://github.com/Jeonhyeonmin/Unity-MMO-Client-Server/blob/main/Unity.gif?raw=true)
 <br>
 
 ## 🏛️ Architecture
