@@ -8,9 +8,8 @@ This project demonstrates the core process of real-time multiplayer communicatio
 
 Multiple clients connect to the server, send their position data, and the server broadcasts this information to all other clients to synchronize their positions in real-time.
 
-**(It is highly recommended to add a GIF here showing multiple clients moving simultaneously!)**
+![multiple clients moving in a game world](https://github.com/Jeonhyeonmin/Unity-MMO-Client-Server/blob/main/Unity.gif?raw=true)
 
-[![multiple clients moving in a game world](https://github.com/Jeonhyeonmin/Unity-MMO-Client-Server/blob/main/Unity.gif?raw=true)
 <br>
 
 ## 🏛️ Architecture
